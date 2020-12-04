@@ -9,9 +9,8 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 const mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://AbhijitHalder:12345@cluster0.v7ery.mongodb.net/ads',
-    {useNewUrlParser: true,
-            useUnifiedTopology: true});
+const globals = require('./config/globals')
+mongoose.connect(globals.db, {useNewUrlParser: true, useUnifiedTopology: true});
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
