@@ -6,10 +6,6 @@ router.get('/', function(req, res, next) {
   res.render('index');
 });
 
-router.get('/ads', function(req, res, next) {
-  res.render('ads/');
-});
-
 router.get('/register', function(req, res, next) {
   res.render('register');
 });

@@ -11,10 +11,10 @@ router.get('/', function(req, res, next) {
         }
         else {
             res.render('ads/index',{
-                ads : ads
+                ads: ads
             })
         }
     })
 });
 
-module.exports = router
+module.exports = router;

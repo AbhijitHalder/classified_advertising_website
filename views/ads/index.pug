@@ -8,8 +8,8 @@ block content
                 th(scope='col') Price
                 th(scope='col') Description
         tbody
-            each ads
+            each ad in ads
                 tr
-                    td this.title
-                    td this.price
-                    td this.description
+                    td  #{ad.title}
+                    td  #{ad.price}
+                    td  #{ad.description}

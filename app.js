@@ -11,7 +11,18 @@ var adsRouter = require('./routes/ads');
 var app = express();
 const mongoose = require('mongoose');
 const globals = require('./config/globals')
-mongoose.connect(globals.db, {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect(globals.db,
+    {
+      useNewUrlParser: true,
+      useUnifiedTopology: true
+    }).then(
+    (res) => {
+      console.log('Connected to MongoDB')
+    }
+).catch(() => {
+  console.log('No Connection to MongoDB')
+})
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -25,7 +36,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/users', adsRouter);
+app.use('/ads', adsRouter);
 
 
 // catch 404 and forward to error handler
