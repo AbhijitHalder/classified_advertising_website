@@ -2,46 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a8845fb-8554-46bb-8784-18e88ba81149" name="Default Changelist" comment="Assignment 2 Part 1.">
-      <change afterPath="$PROJECT_DIR$/views/ads/add.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/ads/edit.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/login.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/partials/footer.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/partials/header.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/register.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/mongodb/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/mongodb/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/mongodb/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/mongodb/index.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/mongodb/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/mongodb/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/globals.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/globals.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/tls.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/tls.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/kareem/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/kareem/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/kareem/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/kareem/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/kareem/docs.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/kareem/docs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/kareem/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/kareem/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/kareem/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/kareem/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/History.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/History.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/dist/browser.umd.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/dist/browser.umd.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/index.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/lib/model.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/lib/schema/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/schema/map.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mpath/History.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mpath/History.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mpath/lib/stringToParts.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mpath/lib/stringToParts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mpath/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mpath/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mquery/History.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mquery/History.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mquery/lib/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mquery/lib/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mquery/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mquery/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/stylesheets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/ads.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/ads.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/error.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/error.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/layout.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/layout.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/ads/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/ads/index.pug" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +21,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1lBxWCToFpz2uQ6PVaymvXQhwDW" />
@@ -113,7 +78,7 @@
       <updated>1607084314907</updated>
       <workItem from="1607084315982" duration="7125000" />
       <workItem from="1607622815816" duration="1278000" />
-      <workItem from="1607625467027" duration="11217000" />
+      <workItem from="1607625467027" duration="16010000" />
     </task>
     <task id="LOCAL-00001" summary="Express Generator site set up.">
       <created>1607089732420</created>
@@ -143,7 +108,21 @@
       <option name="project" value="LOCAL" />
       <updated>1607092101256</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Some update">
+      <created>1607717969187</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1607717969187</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Some update">
+      <created>1607718001293</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1607718001293</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,6 +146,7 @@
     <MESSAGE value="Connection to MongoDB set up." />
     <MESSAGE value="Created globals." />
     <MESSAGE value="Assignment 2 Part 1." />
-    <option name="LAST_COMMIT_MESSAGE" value="Assignment 2 Part 1." />
+    <MESSAGE value="Some update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Some update" />
   </component>
 </project>

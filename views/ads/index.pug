@@ -1,0 +1,15 @@
+extends ../partials/layout
+
+block content
+    table.table.table-hover.table-dark
+        thead
+            tr
+                th(scope='col') Title
+                th(scope='col') Price
+                th(scope='col') Description
+        tbody
+            each ads
+                tr
+                    td this.title
+                    td this.price
+                    td this.description
