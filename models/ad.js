@@ -5,14 +5,15 @@ const adSchema = new mongoose.Schema( {
         required: 'Title is Required',
         trim: true
     },
+    price: {
+        type: Number,
+        required: 'Price is Required'
+    },
     description: {
         type: String,
         required: 'Description is Required',
         trim: true
-    },
-    price: {
-        type: Number
     }
 })
 
-module.exports = mongoose.model('Ad', taskSchema)
+module.exports = mongoose.model('Ad', adSchema)

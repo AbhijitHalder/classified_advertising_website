@@ -1,0 +1,19 @@
+extends partials/layout
+
+block content
+    .container
+        h1 Register
+        form(method='POST')
+            .form-group
+                label(for='email') Email:
+                input#email.form-control(type='email' placeholder='Enter email' name='email')
+            .form-group
+                label(for='pwd') Password:
+                input#pwd.form-control(type='password' placeholder='Enter password' name='pswd')
+            button.btn.btn-primary(type='submit') Register
+
+            hr
+            |         Already have an account?
+            br
+            a(href='login' title='login') Login
+
