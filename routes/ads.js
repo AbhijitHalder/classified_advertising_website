@@ -41,4 +41,17 @@ router.post('/add',(req, res, next) =>
     })
 })
 
+router.get('/delete/:_id',(req, res, next) => {
+    const _id = req.params._id;
+    Ad.remove({ _id: _id }, (err) => {
+        if (err) {
+            console.log(err)
+            res.end(err)
+        }
+        else {
+            res.redirect('/ads')
+        }
+    })
+})
+
 module.exports = router;

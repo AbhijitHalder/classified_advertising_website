@@ -10,10 +10,14 @@ block content
                 th(scope='col') Title
                 th(scope='col') Price
                 th(scope='col') Description
+                th(scope='col')
         tbody
             each ad in ads
                 tr
-                    td  #{ad.title}
-                    td  #{ad.price}
-                    td  #{ad.description}
-
+                    td #{ad.title}
+                    td #{ad.price}
+                    td #{ad.description}
+                    td
+                        a(href='/ads/edit/'+ ad.id) Edit
+                        br
+                        a.text-danger.delete(href='/ads/delete/'+ ad._id) Delete
