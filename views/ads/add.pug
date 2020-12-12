@@ -4,15 +4,15 @@ block content
     form(method="POST")
         label(for="title")
             h1 Title:
-        input(type="text" id="title" name="title").form-control
+        input(type="text" id="title" name="title" required).form-control
         br
         label(for="price")
             h1 Price:
-        input(type="double" id="price" name="price").form-control
+        input(type="number" id="price" name="price" required).form-control
         br
         label(for="description")
             h1 Description:
-        input(type="textarea" id="description" name="description").form-control
+        input(type="textarea" id="description" name="description" required).form-control
 
         br
         br

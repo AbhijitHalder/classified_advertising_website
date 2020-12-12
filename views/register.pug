@@ -3,13 +3,16 @@ extends partials/layout
 block content
     .container
         h1 Register
-        form(method='POST')
+        form(method='post')
             .form-group
-                label(for='email') Email:
-                input#email.form-control(type='email' placeholder='Enter email' name='email')
+                label(for='username') Username:
+                input#username.form-control(type='text' placeholder='Enter username' name='username' required)
             .form-group
-                label(for='pwd') Password:
-                input#pwd.form-control(type='password' placeholder='Enter password' name='pswd')
+                label(for='password') Password:
+                input#password.form-control(type='password' placeholder='Enter password' name='password' required)
+            .form-group
+                label(for='confirm') Confirm Password:
+                input#confirm.form-control(type='password' placeholder='Confirm password' name='confirm' required)
             button.btn.btn-primary(type='submit') Register
 
             hr

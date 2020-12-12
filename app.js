@@ -8,7 +8,11 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var adsRouter = require('./routes/ads');
 
+const passport = require('passport')
+const session = require('express-session')
+
 var app = express();
+
 const mongoose = require('mongoose');
 const globals = require('./config/globals')
 mongoose.connect(globals.db,
@@ -22,6 +26,22 @@ mongoose.connect(globals.db,
 ).catch(() => {
   console.log('No Connection to MongoDB')
 })
+
+app.use(session({
+    secret: 'AdWebsiteSecret',
+    resave: true,
+    saveUninitialized:false
+}))
+
+app.use(passport.initialize())
+app.use(passport.session())
+
+const user = require('./models/user')
+passport.use(user.createStrategy())
+
+//4. Set up Passport to Read /Write user data to the session object
+passport.serializeUser(user.serializeUser())
+passport.deserializeUser(user.deserializeUser())
 
 
 // view engine setup

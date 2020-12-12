@@ -1,9 +1,17 @@
 const express = require('express')
 const router = express.Router()
 
+const passport = require('passport')
 const Ad = require('../models/ad')
 
-router.get('/', function(req, res, next) {
+function isLoggedIn(req, res, next) {
+    if (req.isAuthenticated()) {
+        return next()
+    }
+    res.redirect('users/login')
+}
+
+router.get('/', isLoggedIn, function(req, res, next) {
     Ad.find((err, ads) => {
         if (err) {
             console.log(err)
@@ -17,12 +25,12 @@ router.get('/', function(req, res, next) {
     })
 });
 
-router.get('/add',(req, res, next) =>
+router.get('/add', isLoggedIn,(req, res, next) =>
 {
     res.render('ads/add')
 })
 
-router.post('/add',(req, res, next) =>
+router.post('/add', isLoggedIn,(req, res, next) =>
 {
     Ad.create({
         title: req.body.title,
@@ -41,7 +49,7 @@ router.post('/add',(req, res, next) =>
     })
 })
 
-router.get('/delete/:_id',(req, res, next) => {
+router.get('/delete/:_id', isLoggedIn, (req, res, next) => {
     const _id = req.params._id;
     Ad.remove({ _id: _id }, (err) => {
         if (err) {
@@ -54,7 +62,7 @@ router.get('/delete/:_id',(req, res, next) => {
     })
 })
 
-router.get('/edit/:_id',(req, res, next) => {
+router.get('/edit/:_id', isLoggedIn,(req, res, next) => {
     const _id = req.params._id;
     Ad.findById(_id,(err,ad) => {
         if(err)
@@ -71,7 +79,7 @@ router.get('/edit/:_id',(req, res, next) => {
     })
 })
 
-router.post('/edit/:_id',(req, res, next) =>
+router.post('/edit/:_id', isLoggedIn,(req, res, next) =>
 {
     const _id = req.params._id;
 
