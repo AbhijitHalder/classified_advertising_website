@@ -1,0 +1,21 @@
+extends ../partials/layout
+
+block content
+    form(method="POST")
+        label(for="title")
+            h1 Title:
+        input(type="text" id="title" name="title" value=ad.title).form-control
+        br
+        label(for="price")
+            h1 Price:
+        input(type="double" id="price" name="price" value=ad.price).form-control
+        br
+        label(for="description")
+            h1 Description:
+        input(type="textarea" id="description" name="description" value=ad.description).form-control
+
+        br
+        br
+        br
+
+        input(type="submit" value="Edit").form-control

@@ -28,7 +28,7 @@ router.post('/add',(req, res, next) =>
         title: req.body.title,
         price: req.body.price,
         description: req.body.description
-    }, (err, ad) => {
+    }, (err, ads) => {
         if(err)
         {
             console.log(err)
@@ -49,6 +49,47 @@ router.get('/delete/:_id',(req, res, next) => {
             res.end(err)
         }
         else {
+            res.redirect('/ads')
+        }
+    })
+})
+
+router.get('/edit/:_id',(req, res, next) => {
+    const _id = req.params._id;
+    Ad.findById(_id,(err,ad) => {
+        if(err)
+        {
+            console.log(err)
+            res.end(err)
+        }
+        else
+        {
+            res.render('ads/edit',
+                {
+                    ad: ad})
+        }
+    })
+})
+
+router.post('/edit/:_id',(req, res, next) =>
+{
+    const _id = req.params._id;
+
+    const ad = new Ad({
+        _id: _id,
+        title: req.body.title,
+        price: req.body.price,
+        description: req.body.description
+    })
+
+    Ad.update({_id: _id}, ad, (err) => {
+        if(err)
+        {
+            console.log(err)
+            res.end(err)
+        }
+        else
+        {
             res.redirect('/ads')
         }
     })
