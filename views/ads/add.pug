@@ -1,14 +1,14 @@
 extends ../partials/layout
 
 block content
-    .form-group
-        label(for='title') Title:
-        input#title.form-control(type='text')
-    .form-group
-        label(for='price') price:
-        input#price.form-control(type='price')
-    .form-group
-        label(for='description') description:
-        textarea#description.form-control(rows='5')
+    form(method="POST")
+        label(for="title") Title:
+        input(type="text" id="title" name="title")
 
+        label(for="price") Price:
+        input(type="double" id="price" name="price")
 
+        label(for="description") Description:
+        input(type="textarea" id="description" name="description")
+
+        input(type="submit" value="Submit")

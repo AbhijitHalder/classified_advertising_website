@@ -1,6 +1,9 @@
 extends ../partials/layout
 
 block content
+
+    a(href='ads/add' title='add')
+        h1 Create an Ad
     table.table.table-hover.table-dark
         thead
             tr
@@ -13,3 +16,4 @@ block content
                     td  #{ad.title}
                     td  #{ad.price}
                     td  #{ad.description}
+
