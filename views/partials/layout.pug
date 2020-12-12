@@ -1,11 +1,14 @@
 doctype html
 html
   head
-    title= title
+    title Welcome
     link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
-    script(src='/javascripts/bootstrap.min.js')
   body
     include ./header
     block content
     include ./footer
+
+  script(src='/javascripts/bootstrap.min.js')
+  script(src='/javascripts/jquery.min.js')
+  script(src='/javascripts/scripts.js')
