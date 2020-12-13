@@ -5,7 +5,9 @@ nav.navbar.navbar-expand-sm.bg-dark.fixed-top.justify-content-center
         li.nav-item
             a.nav-link(href='/ads') Ads
         li.nav-item
+    if user
             a.nav-link(href='/users/logout') Logout
+    else
         li.nav-item
             a.nav-link(href='/users/register') Register
         li.nav-item

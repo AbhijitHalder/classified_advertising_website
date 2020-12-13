@@ -17,7 +17,7 @@ function isLoggedIn(req, res, next) {
 }
 
 //Ad index view
-router.get('/', isLoggedIn, function(req, res, next) {
+router.get('/', function(req, res, next) {
     Ad.find((err, ads) => {
         if (err) {
             console.log(err)
@@ -25,7 +25,8 @@ router.get('/', isLoggedIn, function(req, res, next) {
         }
         else {
             res.render('ads/index',{
-                ads: ads
+                ads: ads,
+                user: req.user
             })
         }
     })
@@ -35,7 +36,9 @@ router.get('/', isLoggedIn, function(req, res, next) {
 //add item view
 router.get('/add', isLoggedIn,(req, res, next) =>
 {
-    res.render('ads/add')
+    res.render('ads/add',{
+        user: req.user
+    })
 })
 
 //adds item to the list
@@ -73,19 +76,18 @@ router.get('/delete/:_id', isLoggedIn, (req, res, next) => {
 })
 
 //edit item view
-router.get('/edit/:_id', isLoggedIn,(req, res, next) => {
+router.get('/edit/:_id', isLoggedIn, (req, res, next) => {
     const _id = req.params._id;
-    Ad.findById(_id,(err,ad) => {
-        if(err)
-        {
+    Ad.findById(_id, (err, ad) => {
+        if (err) {
             console.log(err)
             res.end(err)
-        }
-        else
-        {
+        } else {
             res.render('ads/edit',
                 {
-                    ad: ad})
+                    ad: ad,
+                    user: req.user
+                })
         }
     })
 })

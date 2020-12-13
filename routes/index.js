@@ -5,7 +5,7 @@ var router = express.Router();
 //index page view
 router.get('/', function(req, res, next) {
   res.render('index',{
-    //isAuthenticated: req.isAuthenticated
+    user: req.user
   });
 });
 
