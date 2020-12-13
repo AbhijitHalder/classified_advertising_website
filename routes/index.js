@@ -1,9 +1,12 @@
+//reference to express
 var express = require('express');
 var router = express.Router();
 
-/* GET home page. */
+//index page view
 router.get('/', function(req, res, next) {
-  res.render('index');
+  res.render('index',{
+    //isAuthenticated: req.isAuthenticated
+  });
 });
 
 module.exports = router;

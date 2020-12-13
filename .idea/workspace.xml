@@ -3,18 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="7a8845fb-8554-46bb-8784-18e88ba81149" name="Default Changelist" comment="Assignment 2 Part 1.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/globals.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/globals.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/ad.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/ad.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/passport/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/passport/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/javascripts/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/javascripts/scripts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/ads.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/ads.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/users.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/ads/add.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/ads/add.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/login.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/login.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/partials/header.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/header.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/register.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/register.pug" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +85,7 @@
       <workItem from="1607084315982" duration="7125000" />
       <workItem from="1607622815816" duration="1278000" />
       <workItem from="1607625467027" duration="36545000" />
-      <workItem from="1607785146403" duration="11662000" />
+      <workItem from="1607785146403" duration="19576000" />
     </task>
     <task id="LOCAL-00001" summary="Express Generator site set up.">
       <created>1607089732420</created>
@@ -175,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607790206556</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Login Logout">
+      <created>1607809321956</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1607809321956</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,6 +209,7 @@
     <MESSAGE value="Delete" />
     <MESSAGE value="Delete Confirmation" />
     <MESSAGE value="Crud Complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="Crud Complete" />
+    <MESSAGE value="Login Logout" />
+    <option name="LAST_COMMIT_MESSAGE" value="Login Logout" />
   </component>
 </project>

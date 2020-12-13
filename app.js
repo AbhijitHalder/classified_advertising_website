@@ -4,15 +4,18 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+//routes
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var adsRouter = require('./routes/ads');
 
+//auth essentials
 const passport = require('passport')
 const session = require('express-session')
 
 var app = express();
 
+//coonection to mongoDB
 const mongoose = require('mongoose');
 const globals = require('./config/globals')
 mongoose.connect(globals.db,
@@ -27,11 +30,13 @@ mongoose.connect(globals.db,
   console.log('No Connection to MongoDB')
 })
 
+//manage session
 app.use(session({
     secret: 'AdWebsiteSecret',
     resave: true,
     saveUninitialized:false
 }))
+
 
 app.use(passport.initialize())
 app.use(passport.session())
@@ -39,7 +44,6 @@ app.use(passport.session())
 const user = require('./models/user')
 passport.use(user.createStrategy())
 
-//4. Set up Passport to Read /Write user data to the session object
 passport.serializeUser(user.serializeUser())
 passport.deserializeUser(user.deserializeUser())
 
@@ -54,6 +58,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+//routing urls
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/ads', adsRouter);

@@ -1,3 +1,4 @@
+//schema for an ADs
 const mongoose = require('mongoose')
 const adSchema = new mongoose.Schema( {
     title: {
@@ -16,4 +17,5 @@ const adSchema = new mongoose.Schema( {
     }
 })
 
+//make the class public
 module.exports = mongoose.model('Ad', adSchema)

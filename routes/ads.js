@@ -1,9 +1,14 @@
+//reference to express
 const express = require('express')
 const router = express.Router()
 
+//reference to passport
 const passport = require('passport')
+
+//connection to ad schema
 const Ad = require('../models/ad')
 
+//authentication function
 function isLoggedIn(req, res, next) {
     if (req.isAuthenticated()) {
         return next()
@@ -11,6 +16,7 @@ function isLoggedIn(req, res, next) {
     res.redirect('users/login')
 }
 
+//Ad index view
 router.get('/', isLoggedIn, function(req, res, next) {
     Ad.find((err, ads) => {
         if (err) {
@@ -25,11 +31,14 @@ router.get('/', isLoggedIn, function(req, res, next) {
     })
 });
 
+
+//add item view
 router.get('/add', isLoggedIn,(req, res, next) =>
 {
     res.render('ads/add')
 })
 
+//adds item to the list
 router.post('/add', isLoggedIn,(req, res, next) =>
 {
     Ad.create({
@@ -49,6 +58,7 @@ router.post('/add', isLoggedIn,(req, res, next) =>
     })
 })
 
+//delete item
 router.get('/delete/:_id', isLoggedIn, (req, res, next) => {
     const _id = req.params._id;
     Ad.remove({ _id: _id }, (err) => {
@@ -62,6 +72,7 @@ router.get('/delete/:_id', isLoggedIn, (req, res, next) => {
     })
 })
 
+//edit item view
 router.get('/edit/:_id', isLoggedIn,(req, res, next) => {
     const _id = req.params._id;
     Ad.findById(_id,(err,ad) => {
@@ -79,6 +90,8 @@ router.get('/edit/:_id', isLoggedIn,(req, res, next) => {
     })
 })
 
+
+//edit item
 router.post('/edit/:_id', isLoggedIn,(req, res, next) =>
 {
     const _id = req.params._id;
